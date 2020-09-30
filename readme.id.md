@@ -65,7 +65,7 @@ Aplikasi ini dapat dipasang pada server lokal dan onlne dengan spesifikasi berik
 
 ### Langkah Instalasi
 
-1. Clone Repo, pada terminal : `git clone https://github.com/nafiesl/silsilah.git`
+1. Clone Repo, pada terminal : `git clone https://github.com/Ajigo/silsilah.git`
 2. `cd silsilah`
 3. `composer install`
 4. `cp .env.example .env`
