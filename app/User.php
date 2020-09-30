@@ -228,7 +228,11 @@ class User extends Authenticatable
     {
         return $this->belongsTo(User::class);
     }
-
+    public function managerLink($type = 'profile')
+    {
+        $type = ($type == 'chart') ? 'chart' : 'show';
+        return link_to_route('users.'.$type, $this->manager->name, [$this->manager_id]);
+    }
     public function managedUsers()
     {
         return $this->hasMany(User::class, 'manager_id');
